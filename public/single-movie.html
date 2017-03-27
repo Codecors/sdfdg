@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movies</title>
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap/css/bootstrap-theme.css">
+		<link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap/css/bootstrap.css">
+		<script src="https://use.fontawesome.com/57a2949668.js"></script>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+		<script src ="./scripts/single-movie.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=.75">
+	</head>
+	<body>
+		<nav class='top-nav'>
+		</nav>
+		<main>
+		<div class = 'getSingleMovieButton'>GetSingleMovie</div>
+		<article class = "movies-article">
+			<script id="single-movie-template" type="text/x-handlebars-template">
+			<div class="title-container">
+						<h1>{{title}}</h1>
+			</div>
+			<div class="rating-container">
+						<h3>{{rating}}</h3>
+			</div>
+			</script>
+			<div class = 'single-movie-placeholder'></div>
+		</article>
+		</main>
+		<footer>
+		</footer>
+	</body>
+</html>
